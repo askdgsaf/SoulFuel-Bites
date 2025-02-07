@@ -34,7 +34,7 @@ body{
     font-family: "Inter", serif;
     font-weight: 500;
     font-size: 16px;
-    width: 90%;
+    width: 90%; 
 }
 .logo img{
     width: 130px;
@@ -59,7 +59,67 @@ body{
 
 
 
-.dish-container{
+
+.carousel{
+    position: relative;
+    width: 100%;
+    overflow: hidden;  
+}
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: none;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* .carousel-text {
+    position: absolute;
+    font-family: "playfair display",serif;
+    color: #F9F9F9;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    top: 60%;
+    left: 13%;
+}
+.carousel-text span:first-child{
+    color: #5cff59;
+    font-size: 70px;
+}
+.carousel-text span:last-child{
+    color: red;
+    font-size: 70px;
+} */
+img.displaySlide{
+    display: block;
+}
+.carousel button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 5px 18px;
+    background-color: #FF8359;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.carousel button:hover{
+    color: #FF8359;
+    background-color: white;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+
+
+
+
+/* .dish-container{
     width: 90%;
     height: auto;
     display: flex;
@@ -75,7 +135,7 @@ body{
     aspect-ratio: 4 / 3;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    /* aspect-ratio:4 / 3...space... */
+    //aspect-ratio:4 / 3...space...
 }
 .image-container img{
     width: 100%;
@@ -139,7 +199,7 @@ body{
     transform: rotate(335deg);
     color: #ffff;
     background-color: #FF8359;
-}
+} */
 
 
 
